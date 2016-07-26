@@ -3,7 +3,15 @@ print("--- Caesar Cipher Encryption ---")
 
 # Get Cipher key as integer
 print("")
-shift = int(input("Please enter cipher key: "))
+while True:
+	try:
+		shift = int(input("Please enter cipher key: "))
+	except ValueError:
+		print("You must enter an integer!")
+		continue
+	else:
+		break
+
 
 # Get Message as lowercase string
 print("")
