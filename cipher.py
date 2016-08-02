@@ -35,4 +35,4 @@ for i in range(len(char_to_int)):
 # Convert list of shifted integers to output string
 output_str = "".join([chr(i) for i in char_to_int])
 
-print("Decrypted message: ", output_str)
+print("Encrypted message: ", output_str)
